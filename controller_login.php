@@ -15,22 +15,22 @@
 			//INSTANCIA DEL USUARIO DE LA BD 
 			$MyusuarioOptenido=$MycrudUsuario->ObtenerUsuario($_POST['txtUsuario'],$_POST['txtPassword']);	
 
-  if($MyusuarioOptenido->getnombreUsu()!=null  && $MyusuarioOptenido->getestadoUsu() !="0" && $MycrudUsuario->Validar_fechaVencida($MyusuarioOptenido->getfechaVencimientoUsu())){
+  if($MyusuarioOptenido->getnombreUsu()!=null  && $MyusuarioOptenido->getestadoUsu() !="0" /*&&  $MycrudUsuario->Validar_fechaVencida($MyusuarioOptenido->getfechaVencimientoUsu())*/){
 					
-				
+				echo "".$MycrudUsuario->Validar_fechaVencida($MyusuarioOptenido->getfechaVencimientoUsu());
 
 
 			 		if($MyusuarioOptenido->gettipoUsu()=="U"){
 			 				$_SESSION["usuario"]=$MyusuarioOptenido;			
-			 			header("location:Cuenta_indexusuario.php");
+			 			//header("location:Cuenta_indexusuario.php");
 			 		}else if($MyusuarioOptenido->gettipoUsu()=="A"){
 			 			$_SESSION["usuario"]=$MyusuarioOptenido;			
-			 			header("location:Cuenta_indexAdministrador.php");	
+			 			//header("location:Cuenta_indexAdministrador.php");	
 			 		}
 
 
 			}else {
-				header("location:index.php");		
+				//header("location:index.php");		
 				//echo "No es correcto";
 			}	
 
