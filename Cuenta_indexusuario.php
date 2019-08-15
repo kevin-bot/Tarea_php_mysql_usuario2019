@@ -1,11 +1,13 @@
 <?php
-	session_start();
-		if(!isset($_SESSION['usuario'])){
-			header("location:index.php");
-		}	
 
+  session_start();
+    if(!isset($_SESSION['usuario'])){
+      header("location:index.php");
+    } 
+
+    //include_once("controller_login.php");
+      
 ?>
-
 
 <html>
     <head>
@@ -23,20 +25,16 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
-    <nav class="#6a1b9a purple darken-3">
+    <nav class="#00897b teal darken-1">
       <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Administrador</a>  
+      <a href="#" class="brand-logo">Cliente</a>  
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="Clientes.html">Clientes</a></li>
-              <li><a href="Productos.html">Productos</a></li>
-              <li><a href="Proveedores.html">Proveedores</a></li>
+              <li><a href="Clientes.html">Productos</a></li>
+              <li><a href="Productos.html">Carritos</a></li>
+              <li><a href="Proveedores.html">Credito</a></li>
           </ul>           
       </div>
     </nav>
        
     </body>
   </html>
-
-
-
-

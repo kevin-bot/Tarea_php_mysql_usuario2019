@@ -37,11 +37,11 @@
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <form method="post" action="controller_login.php">
-      <div class="hide-on-small-only">
+      <div class="hide-on-small-only  ">
       <div class="row login">
-          <div class="col s6 14 offset-14">
+          <div class="col s6 14 offset-14" >
               <div class="card">
-                  <div class="card-action red white-text">
+                  <div class="card-action red white-text #b71c1c red darken-4">
                     <h3>Login</h3>
                   </div>
 
@@ -53,10 +53,10 @@
                     </div>
                     <div class="form-field">
                       <label for="password">Password</label>
-                      <input type="text" name="txtPassword">
-                    </div>
+                      <input type="password" name="txtPassword">
+                    </div >
                     <div class="form-field center-align">                      
-                      <input type="submit" name="btnenviar" class="btn-large red buttom">
+                      <input type="submit" name="btnenviar" class="btn-large red buttom #b71c1c red darken-4">
                     </div>
                   </div>
               </div>
